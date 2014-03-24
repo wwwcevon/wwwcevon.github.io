@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kevincai's Blog]]></title>
+  <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
+  <link href="http://wwwcevon.github.io/"/>
+  <updated>2014-03-24T18:16:33+08:00</updated>
+  <id>http://wwwcevon.github.io/</id>
+  <author>
+    <name><![CDATA[Kevincai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/24/first-blog/"/>
+    <updated>2014-03-24T17:37:02+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/24/first-blog</id>
+    <content type="html"><![CDATA[<h1>Blog</h1>
+
+<h2>Installation</h2>
+
+<p>Blog framework:Octopress</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>install octopress</h3>
+
+<ul>
+<li><p>install git</p></li>
+<li><p>install rbenv</p></li>
+<li><p>clone octopress from github</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>install dependencies</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
+</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Install the default Octopress theme</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>deploying to Github Pages</h3>
+
+<ul>
+<li><p>Create a new Github repository and name the repository with the format username.github.io, where username is your GitHub user name or organization name.</p></li>
+<li><p>input</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
+</span><span class='line'>git@github.com:wwwcevon/wwwcevon.github.io.git</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next run:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>commit the source for your blog.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m 'your message'
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Configuring Octopress</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> _config.yml       # Main config (Jekyll's settings)
+</span><span class='line'>Rakefile          # Configs for deployment
+</span><span class='line'>config.rb         # Compass config
+</span><span class='line'>config.ru         # Rack config</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&hellip;&hellip;<a href="http://octopress.org/docs/configuring/">http://octopress.org/docs/configuring/</a></p>
+
+<h3>BLog with Octopress</h3>
+
+<ul>
+<li><p>rake new_post[&ldquo;title&rdquo;]</p></li>
+<li><p>Generate and preview</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate   # Generates posts and pages into the public directory
+</span><span class='line'>rake watch      # Watches source/ and sass/ for changes and regenerates
+</span><span class='line'>rake preview    # open in chrome</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
