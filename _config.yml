@@ -34,7 +34,7 @@ plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 markdown: rdiscount
-rdiscount: smart
+rdiscount: 
   extensions:
     - autolink
     - footnotes
