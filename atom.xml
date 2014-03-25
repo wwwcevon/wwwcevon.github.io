@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-03-25T16:23:11+08:00</updated>
+  <updated>2014-03-25T16:24:41+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -34,11 +34,8 @@
 <li>copy into /source</li>
 <li>regenerate and deploy</li>
 <li><p>click verify</p></li>
-<li><p>choose <code>Google Webmaster Tools</code></p>
-
-<pre><code>   `Crawl:` `Fetch as Google`
-</code></pre></li>
-<li><p>Click FETCH</p></li>
+<li><p>choose <code>Google Webmaster Tools</code> <code>Crawl:</code> <code>Fetch as Google</code></p></li>
+<li>Click FETCH</li>
 <li>URL submitted to index</li>
 </ul>
 
