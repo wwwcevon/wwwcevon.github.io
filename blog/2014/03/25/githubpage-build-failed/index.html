@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Kevincai's Blog</title>
+  <title>GithubPage Build Failed - Kevincai's Blog</title>
   <meta name="author" content="Kevincai">
 
   
@@ -19,7 +19,7 @@ http://octopress.org Error description The page build failed with the following 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wwwcevon.github.io">
+  <link rel="canonical" href="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Kevincai's Blog" type="application/atom+xml">
@@ -64,15 +64,12 @@ http://octopress.org Error description The page build failed with the following 
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/03/25/githubpage-build-failed/">GithubPage Build Failed</a></h1>
+      <h1 class="entry-title">GithubPage Build Failed</h1>
     
     
       <p class="meta">
@@ -95,7 +92,7 @@ http://octopress.org Error description The page build failed with the following 
   </header>
 
 
-  <div class="entry-content"><h1>Blog</h1>
+<div class="entry-content"><h1>Blog</h1>
 
 <h2>Error</h2>
 
@@ -131,22 +128,16 @@ http://octopress.org Error description The page build failed with the following 
 
 <p>GithubPage只需要<em>deploy中的内容，所以将remote/master指向</em>deploy文件夹，再重新deploy</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/24/first-blog/">First Blog</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kevincai</span></span>
+
+      
 
 
 
@@ -158,138 +149,32 @@ http://octopress.org Error description The page build failed with the following 
   
 
 
-<time datetime="2014-03-24T17:37:02+08:00" pubdate data-updated="true">Mar 24<span>th</span>, 2014</time>
-        
-      </p>
+<time datetime="2014-03-25T10:16:06+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+      
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/" data-via="" data-counturl="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/" >Tweet</a>
+  
+  
+  
+</div>
 
-
-  <div class="entry-content"><h1>Blog</h1>
-
-<h2>Installation</h2>
-
-<p>Blog framework:Octopress</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>install octopress</h3>
-
-<ul>
-<li><p>install git</p></li>
-<li><p>install rbenv</p></li>
-<li><p>clone octopress from github</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>install dependencies</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
-</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Install the default Octopress theme</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>deploying to Github Pages</h3>
-
-<ul>
-<li><p>Create a new Github repository and name the repository with the format username.github.io, where username is your GitHub user name or organization name.</p></li>
-<li><p>input</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
-</span><span class='line'>git@github.com:wwwcevon/wwwcevon.github.io.git</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Next run:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>commit the source for your blog.</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Configuring Octopress</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> _config.yml       # Main config (Jekyll's settings)
-</span><span class='line'>Rakefile          # Configs for deployment
-</span><span class='line'>config.rb         # Compass config
-</span><span class='line'>config.ru         # Rack config</span></code></pre></td></tr></table></div></figure>
-
-
-<p>&hellip;&hellip;<a href="http://octopress.org/docs/configuring/">http://octopress.org/docs/configuring/</a></p>
-
-<h3>BLog with Octopress</h3>
-
-<ul>
-<li><p>rake new_post[&ldquo;title&rdquo;]</p></li>
-<li><p>Generate and preview</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate   # Generates posts and pages into the public directory
-</span><span class='line'>rake watch      # Watches source/ and sass/ for changes and regenerates
-</span><span class='line'>rake preview    # open in chrome</span></code></pre></td></tr></table></div></figure>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/24/first-blog/" title="Previous Post: First Blog">&laquo; First Blog</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -310,7 +195,7 @@ http://octopress.org Error description The page build failed with the following 
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/wwwcevon">@wwwcevon</a> on GitHub
@@ -342,6 +227,7 @@ http://octopress.org Error description The page build failed with the following 
 
   
 </aside>
+
 
     </div>
   </div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-03-24T18:40:07+08:00</updated>
+  <updated>2014-03-25T10:27:27+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GithubPage Build Failed]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/"/>
+    <updated>2014-03-25T10:16:06+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed</id>
+    <content type="html"><![CDATA[<h1>Blog</h1>
+
+<h2>Error</h2>
+
+<p>Blog framework:Octopress</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Error description</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>A file was included in source/index.html that is a symlink or does not exist in your _includes directory.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd _deploy
+</span><span class='line'>git config branch.master.remote origin
+</span><span class='line'>git config branch.master.merge refs/heads/master
+</span><span class='line'>git pull
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Summary</h3>
+
+<p>不应使用git commit去发表blog，或使用merge／rebase等使得source branch和master branch合并。</p>
+
+<p>GithubPage只需要<em>deploy中的内容，所以将remote/master指向</em>deploy文件夹，再重新deploy</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Blog]]></title>
