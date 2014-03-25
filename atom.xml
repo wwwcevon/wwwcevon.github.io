@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-03-25T16:08:16+08:00</updated>
+  <updated>2014-03-25T16:17:50+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Search in Blog]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/25/search-in-blog/"/>
+    <updated>2014-03-25T16:10:46+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/25/search-in-blog</id>
+    <content type="html"><![CDATA[<h1>Blog</h1>
+
+<h2>Search</h2>
+
+<h3>How to make it possible to search in the blog</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>site:wwwcevon.github.io</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>Google Webmaster Tools</code></p>
+
+<p><code>Crawl:</code>Fetch as Google</p>
+
+<ul>
+<li>Click FETCH</li>
+<li>URL submitted to index</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Design for Oryx_cloud]]></title>
