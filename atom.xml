@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-03-25T10:27:27+08:00</updated>
+  <updated>2014-03-25T14:48:56+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Design for Oryx_cloud]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/25/design-for-oryx-cloud/"/>
+    <updated>2014-03-25T14:16:02+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/25/design-for-oryx-cloud</id>
+    <content type="html"><![CDATA[<h1>Oryx-cloud</h1>
+
+<h2>design</h2>
+
+<h3>功能</h3>
+
+<p><em>创建service(serving-layer computation-layer打包进行？多个s-l加一个c-l?)
+</em>创建instance
+*创建task?(queue list?)</p>
+
+<p><em>配置(手动／自动／默认／界面化)
+</em>监控（host／service／instance？／）->图表（knowing）
+*</p>
+
+<p>&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GithubPage Build Failed]]></title>
