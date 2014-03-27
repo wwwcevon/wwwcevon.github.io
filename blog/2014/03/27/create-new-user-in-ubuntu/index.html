@@ -5,12 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>GithubPage Build Failed - Kevincai's Blog</title>
+  <title>Create New User in Ubuntu - Kevincai's Blog</title>
   <meta name="author" content="Kevincai">
 
   
-  <meta name="description" content="Blog Error Blog framework:Octopress 1
-http://octopress.org Error description The page build failed with the following error: A file was included in &hellip;">
+  <meta name="description" content="Linux Tips Purpose Create new user on ubuntu How 1
+2
+3
+$ sudo useradd -d /home/username -m username
+$ sudo passwd username
+$ sudo adduser username &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +23,7 @@ http://octopress.org Error description The page build failed with the following 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed">
+  <link rel="canonical" href="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Kevincai's Blog" type="application/atom+xml">
@@ -69,7 +73,7 @@ http://octopress.org Error description The page build failed with the following 
   
   <header>
     
-      <h1 class="entry-title">GithubPage Build Failed</h1>
+      <h1 class="entry-title">Create New User in Ubuntu</h1>
     
     
       <p class="meta">
@@ -85,48 +89,42 @@ http://octopress.org Error description The page build failed with the following 
   
 
 
-<time datetime="2014-03-25T10:16:06+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+<time datetime="2014-03-27T14:57:42+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h1>Blog</h1>
+<div class="entry-content"><h1>Linux</h1>
 
-<h2>Error</h2>
+<h2>Tips</h2>
 
-<p>Blog framework:Octopress</p>
+<h3>Purpose</h3>
+
+<p>Create new user on ubuntu</p>
+
+<h3>How</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo useradd -d /home/username -m username
+</span><span class='line'>$ sudo passwd username
+</span><span class='line'>$ sudo adduser username group</span></code></pre></td></tr></table></div></figure>
 
 
-<h3>Error description</h3>
+<h3>Abnormal</h3>
 
-<p>The page build failed with the following error:</p>
-
-<p>A file was included in source/index.html that is a symlink or does not exist in your _includes directory.</p>
+<p>Bash not running for new admin users on login</p>
 
 <h3>Solution</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd _deploy
-</span><span class='line'>git config branch.master.remote origin
-</span><span class='line'>git config branch.master.merge refs/heads/master
-</span><span class='line'>git pull
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ useradd -D
+</span><span class='line'>$ sudo chsh -s /bin/bash username</span></code></pre></td></tr></table></div></figure>
 
-
-<h3>Summary</h3>
-
-<p>不应使用git commit去发表blog，或使用merge／rebase等使得source branch和master branch合并。</p>
-
-<p>GithubPage只需要<em>deploy中的内容，所以将remote/master指向</em>deploy文件夹，再重新deploy</p>
 </div>
 
 
@@ -149,7 +147,7 @@ http://octopress.org Error description The page build failed with the following 
   
 
 
-<time datetime="2014-03-25T10:16:06+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+<time datetime="2014-03-27T14:57:42+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2014</time>
       
 
 
@@ -157,7 +155,7 @@ http://octopress.org Error description The page build failed with the following 
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/" data-via="" data-counturl="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/" data-via="" data-counturl="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/" >Tweet</a>
   
   
   
@@ -166,10 +164,8 @@ http://octopress.org Error description The page build failed with the following 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/03/24/first-blog/" title="Previous Post: First Blog">&laquo; First Blog</a>
+        <a class="basic-alignment left" href="/blog/2014/03/26/runing-two-vagrant-error/" title="Previous Post: Running two vagrant error">&laquo; Running two vagrant error</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/03/25/design-for-oryx-cloud/" title="Next Post: design for oryx_cloud">design for oryx_cloud &raquo;</a>
       
     </p>
   </footer>

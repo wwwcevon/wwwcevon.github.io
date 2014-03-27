@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-03-26T10:50:57+08:00</updated>
+  <updated>2014-03-27T15:04:22+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Create New User in Ubuntu]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/"/>
+    <updated>2014-03-27T14:57:42+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu</id>
+    <content type="html"><![CDATA[<h1>Linux</h1>
+
+<h2>Tips</h2>
+
+<h3>Purpose</h3>
+
+<p>Create new user on ubuntu</p>
+
+<h3>How</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo useradd -d /home/username -m username
+</span><span class='line'>$ sudo passwd username
+</span><span class='line'>$ sudo adduser username group</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Abnormal</h3>
+
+<p>Bash not running for new admin users on login</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ useradd -D
+</span><span class='line'>$ sudo chsh -s /bin/bash username</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Running Two Vagrant Error]]></title>

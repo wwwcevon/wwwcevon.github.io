@@ -9,7 +9,12 @@
   <meta name="author" content="Kevincai">
 
   
-  <meta name="description" content="Vagrant Abnormal Abnormal description Run two same name vagrant at same time with different ids. ansible won&rsquo;t work correctly can&rsquo;t open &hellip;">
+  <meta name="description" content="Linux Tips Purpose Create new user on ubuntu How 1
+2
+3
+$ sudo useradd -d /home/username -m username
+$ sudo passwd username
+$ sudo adduser username &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +70,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/27/create-new-user-in-ubuntu/">Create New User in Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-27T14:57:42+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Linux</h1>
+
+<h2>Tips</h2>
+
+<h3>Purpose</h3>
+
+<p>Create new user on ubuntu</p>
+
+<h3>How</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo useradd -d /home/username -m username
+</span><span class='line'>$ sudo passwd username
+</span><span class='line'>$ sudo adduser username group</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Abnormal</h3>
+
+<p>Bash not running for new admin users on login</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ useradd -D
+</span><span class='line'>$ sudo chsh -s /bin/bash username</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -454,6 +523,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/27/create-new-user-in-ubuntu/">Create New User in Ubuntu</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/26/runing-two-vagrant-error/">Running Two Vagrant Error</a>
       </li>
     
@@ -467,10 +540,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/25/githubpage-build-failed/">GithubPage Build Failed</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/24/first-blog/">First Blog</a>
       </li>
     
   </ul>
