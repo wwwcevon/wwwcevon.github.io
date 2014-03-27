@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blog | Kevincai's Blog]]></title>
+  <link href="http://wwwcevon.github.io/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://wwwcevon.github.io/"/>
+  <updated>2014-03-27T17:36:18+08:00</updated>
+  <id>http://wwwcevon.github.io/</id>
+  <author>
+    <name><![CDATA[Kevincai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/24/first-blog/"/>
+    <updated>2014-03-24T17:37:02+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/24/first-blog</id>
+    <content type="html"><![CDATA[<h1>Blog</h1>
+
+<h2>Installation</h2>
+
+<p>Blog framework:Octopress</p>
+
+<p><code>
+http://octopress.org
+</code></p>
+
+<h3>install octopress</h3>
+
+<ul>
+<li><p>install git</p></li>
+<li><p>install rbenv</p></li>
+<li><p>clone octopress from github</p></li>
+</ul>
+
+
+<p><code>
+git clone git://github.com/imathis/octopress.git octopress
+</code></p>
+
+<ul>
+<li>install dependencies</li>
+</ul>
+
+
+<p><code>
+gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+</code></p>
+
+<ul>
+<li>Install the default Octopress theme</li>
+</ul>
+
+
+<p><code>
+rake install
+</code></p>
+
+<h3>deploying to Github Pages</h3>
+
+<ul>
+<li><p>Create a new Github repository and name the repository with the format username.github.io, where username is your GitHub user name or organization name.</p></li>
+<li><p>input</p></li>
+</ul>
+
+
+<p><code>
+rake setup_github_pages
+git@github.com:wwwcevon/wwwcevon.github.io.git
+</code></p>
+
+<ul>
+<li>Next run:</li>
+</ul>
+
+
+<p><code>
+rake generate
+rake deploy
+</code></p>
+
+<ul>
+<li>commit the source for your blog.</li>
+</ul>
+
+
+<p><code>
+git add .
+git commit -m 'your message'
+git push origin source
+</code></p>
+
+<h3>Configuring Octopress</h3>
+
+<p><code>
+ _config.yml       # Main config (Jekyll's settings)
+Rakefile          # Configs for deployment
+config.rb         # Compass config
+config.ru         # Rack config
+</code></p>
+
+<p>&hellip;&hellip;<a href="http://octopress.org/docs/configuring/">http://octopress.org/docs/configuring/</a></p>
+
+<h3>BLog with Octopress</h3>
+
+<ul>
+<li><p>rake new_post[&ldquo;title&rdquo;]</p></li>
+<li><p>Generate and preview</p></li>
+</ul>
+
+
+<p><code>
+rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # open in chrome
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
