@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PredictionIO | Kevincai's Blog]]></title>
+  <link href="http://wwwcevon.github.io/blog/categories/predictionio/atom.xml" rel="self"/>
+  <link href="http://wwwcevon.github.io/"/>
+  <updated>2014-04-03T11:29:43+08:00</updated>
+  <id>http://wwwcevon.github.io/</id>
+  <author>
+    <name><![CDATA[Kevincai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PredictionIO issue solution]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/04/03/predictionio-issue-solution/"/>
+    <updated>2014-04-03T11:13:25+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/04/03/predictionio-issue-solution</id>
+    <content type="html"><![CDATA[<h1>PredictionIO</h1>
+
+<h2>Trouble</h2>
+
+<h3>Trouble description</h3>
+
+<p>run
+<code>
+PredictionIO/bin/start-all.sh
+</code></p>
+
+<p>error:Trying to start API server&hellip; (8000 unreachable)</p>
+
+<h3>Solution</h3>
+
+<p>delete api.pid</p>
+
+<h3>Trouble description</h3>
+
+<p>can&rsquo;t run engine</p>
+
+<h3>Solution</h3>
+
+<p>delete hdfs vagrant/predictionio/apps/*</p>
+]]></content>
+  </entry>
+  
+</feed>
