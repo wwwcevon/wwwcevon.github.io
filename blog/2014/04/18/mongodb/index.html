@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: PredictionIO - Kevincai's Blog</title>
+  <title>MongoDB - Kevincai's Blog</title>
   <meta name="author" content="Kevincai">
   <link rel="author" href="humans.txt">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,7 +13,13 @@
   
     
   
-  <meta name="description" content=" Category: PredictionIO ">
+  <meta name="description" content="MongoDB Tips MongoDB&mdash;&mdash;SQL 1
+2
+3
+document row
+collection table
+database database Daemon 1
+$ mongod --dbpath=&lt;data/db&gt; --logpath=&lt &hellip;">
   
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -21,17 +27,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wwwcevon.github.ioblog/categories/predictionio/">
+  <link rel="canonical" href="http://wwwcevon.github.io/blog/2014/04/18/mongodb/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Kevincai's Blog" type="application/atom+xml">
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Kevincai's Blog" />
-  <meta name="og:title" content="Category: PredictionIO" />
-  <meta name="og:description" content=" Category: PredictionIO " />
-  <meta name="og:url" content="http://wwwcevon.github.ioblog/categories/predictionio/index.html"/>
-  <meta name="url" content="http://wwwcevon.github.ioblog/categories/predictionio/index.html">
+  <meta name="og:title" content="MongoDB" />
+  <meta name="og:description" content="MongoDB Tips MongoDB&mdash;&mdash;SQL 1
+2
+3
+document row
+collection table
+database database Daemon 1
+$ mongod --dbpath=&lt;data/db&gt; --logpath=&lt &hellip;" />
+  <meta name="og:url" content="http://wwwcevon.github.io/blog/2014/04/18/mongodb/"/>
+  <meta name="url" content="http://wwwcevon.github.io/blog/2014/04/18/mongodb/">
+  
+  <meta name="subject" content="MongoDB"/>
+  <meta name="category" content="MongoDB"/>
   
   <meta name="distribution" content="global">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -42,7 +57,8 @@
 
 </head>
 
-<nav role="navigation"><div class="navbar">
+<body   >
+  <nav role="navigation"><div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="/">Kevincai's Blog</a>
     <ul class="nav">
@@ -65,44 +81,161 @@
   </div>
 </div>
 </nav>
-<div class="wrapper_single">
-  <div class="container">
-    <article class="span8 offset2 article-format" role="article">
-      <div role="div">
-        
-        <header>
-          <h1 class="entry-title">Category: PredictionIO</h1>
-          
-        </header>
-        
-        <div id="blog-archives" class="category">
+  <div class="wrapper_single">
+    <div class="container">
+      <article class="span8 offset2" role="article">
+        <div class="article-format">
 
-
-
-  
-  <h2>2014</h2>
-
-<article class="archive-article-format">
-  
-<h2><a href="/blog/2014/04/03/predictionio-issue-solution/">PredictionIO Issue Solution</a></h2>
-<time datetime="2014-04-03T11:13:25+08:00" pubdate><span class='month'>Apr</span> <span class='day'>03</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories meta">posted in <a class='category' href='/blog/categories/predictionio/'>PredictionIO</a></span>
-</footer>
-
-
-</article>
-
-</div>
-
-        
-      </div>
+  <header>
     
-    </article>
-  </div>
+      <h1 class="entry-title">MongoDB</h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T15:55:37+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time> - 
+        
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mongodb/'>MongoDB</a>
+  
+</span>
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>MongoDB</h1>
+
+<h2>Tips</h2>
+
+<p>MongoDB&mdash;&mdash;SQL</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>document     row
+</span><span class='line'>collection   table
+</span><span class='line'>database     database</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Daemon</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mongod --dbpath=&lt;data/db&gt; --logpath=&lt;data/log/r3.log&gt; --fork</span></code></pre></td></tr></table></div></figure>
+
+
+<p>config</p>
+
+<p><code>port</code>
+Web port = port+1000</p>
+
+<p><code>logappendw</code>
+错误日志采用追加模式，默认是复写模式</p>
+
+<p><code>journal</code>
+开启日志功能</p>
+
+<p><code>directoryperdb</code>
+每个db存放在单独的目录中，建议设置</p>
+
+<p><code>maxConns</code>
+最大连接数</p>
+
+<h2>Attention</h2>
+
+<p>不要用kill -9 杀mongoDB的进程，会损坏数据</p>
+
+<p>可以使用
+<code>Control-C</code>
+<code>shutdownServer()</code>
+<code>kill -2</code></p>
 </div>
-<div id="footer-widgets">
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T15:55:37+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time> - 
+      
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mongodb/'>MongoDB</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wwwcevon.github.io/blog/2014/04/18/mongodb/" data-via="" data-counturl="http://wwwcevon.github.io/blog/2014/04/18/mongodb/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    
+      <a class="pull-left" href="/blog/2014/04/03/predictionio-issue-solution/" title="Previous Post: PredictionIO issue solution">&laquo; PredictionIO issue solution</a>
+    
+    
+  </footer>
+
+</div>
+
+        
+      </article>
+    </div>
+  </div>
+  <div id="footer-widgets">
   <div class="container">
     <div class="row">
   <div class="span3">
@@ -179,7 +312,7 @@
   </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript"><\/script>')</script>
 <script src="/javascripts/libs/bootstrap.min.js" type="text/javascript"></script>
 <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
@@ -207,3 +340,5 @@
 
 
 
+</body>
+</html>
