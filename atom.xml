@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-04-21T18:05:07+08:00</updated>
+  <updated>2014-04-21T18:07:54+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -71,6 +71,10 @@
 <p>GridFS可以创建index</p>
 
 <p>GridFS性能通常不如HDFS</p>
+
+<h3>mongoexport mongoimport</h3>
+
+<p>用于导入和导出数据，可以使用csv文件格式，可以跨数据库平台</p>
 ]]></content>
   </entry>
   
