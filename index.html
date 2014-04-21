@@ -108,6 +108,110 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/">MongoDB的嵌套和引用</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T11:34:04+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>MongoDB</h1>
+
+<h2>Skills</h2>
+
+<p>MongoDB中表示关系的方法有两种：</p>
+
+<ul>
+<li>嵌套</li>
+<li>引用</li>
+</ul>
+
+
+<h3>嵌套</h3>
+
+<p>collection中嵌套collection，逻辑上数据分离，但存储上是一个整体</p>
+
+<p>{A:[{A.a:1},{A.b:2},{A.c:3}],B:4}</p>
+
+<h3>引用链接</h3>
+
+<p>通过DBRef对象储存目标文档的信息，如同sql中的外键</p>
+
+<p>{A:[DBRef(Collection_x,x.a[&lsquo;<em>id&rsquo;]),DBRef(Collection_x,x.b[&lsquo;</em>id&rsquo;]),DBRef(Collection_x,x.c[&lsquo;_id&rsquo;])],B:name}</p>
+
+<h3>区别</h3>
+
+<ul>
+<li>用法上不一样
+
+<ul>
+<li>嵌套直接使用</li>
+<li>引用链接需要解引用（dereference）</li>
+</ul>
+</li>
+<li>储存不一样
+
+<ul>
+<li>嵌套是完整的文档</li>
+<li>引用是一个外键</li>
+</ul>
+</li>
+<li>性能不一样
+
+<ul>
+<li>嵌套一次查询</li>
+<li>引用根据解引用的次数+1（引用文档本身）</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>自动解引用</h3>
+
+<p>用pymongo.son_maniputaor中的AutoReference和NamespaceInjector绑定database就可以像嵌套一样去使用引用，不需要每次都手动解引用</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/04/18/mongodb/">MongoDB</a></h1>
     
     
@@ -841,6 +945,10 @@ posted in
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/">MongoDB的嵌套和引用</a>
+        </li>
+      
+        <li>
           <a href="/blog/2014/04/18/mongodb/">MongoDB</a>
         </li>
       
@@ -854,10 +962,6 @@ posted in
       
         <li>
           <a href="/blog/2014/03/26/runing-two-vagrant-error/">Running two vagrant error</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2014/03/25/search-in-blog/">Search in blog</a>
         </li>
       
     </ul>
