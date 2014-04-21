@@ -108,6 +108,109 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/04/21/mongodbxue-xi-ji-lu/">mongoDB学习记录</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T16:33:50+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>MongoDB</h1>
+
+<h2>Data Models</h2>
+
+<h3>Reference</h3>
+
+<p>使用引用去关系collection，直接存<em>id或者collectionname_id:&lt;</em>id></p>
+
+<h3>Embedded Data</h3>
+
+<p>使用内嵌去关系collection，每个Bson文件不能大于16mb</p>
+
+<p>不是完全不能存16mb以上的collection，而是当collection的大小超过16mb时mongodb会自动将它从内存中转移到硬盘中，降低了速度，也使数据分离，所以当collection预计要超过16mb时，建议使用reference</p>
+
+<h3>Atomicity</h3>
+
+<p>在Mongodb中对document的操作都是atomicity，对某个document的操作同时都是单一的，一个写操作也不能同时对多个document进行。</p>
+
+<h3>Sharding</h3>
+
+<p>使用sharding来使得mongodb可以支持分布式和大数据</p>
+
+<p>分解collections对于大数据很重要</p>
+
+<h3>Indexes</h3>
+
+<ul>
+<li>Mongodb默认对_id创建特殊的index</li>
+<li>index对读操作会有用，但是对写操作有副作用，每次写操作都将重新生成index</li>
+<li>每个index占8kb</li>
+<li>当启动时，index就会占用内存</li>
+</ul>
+
+
+<h3>Namespace</h3>
+
+<p>namespace 文件 .ns 存所有的collection和index的名字</p>
+
+<p>每个namespace不能超过123 bytes</p>
+
+<p>16mb的namespace 文件存约24000个namespaces</p>
+
+<p>namespace文件最大为2047 mb</p>
+
+<p>可以通过 nssize 选项控制</p>
+
+<h3>GridFS</h3>
+
+<p>GridFS存在两个文件中 fs.files fs.chunks</p>
+
+<p>GridFS可以创建index</p>
+
+<p>GridFS性能通常不如HDFS</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/">MongoDB的嵌套和引用</a></h1>
     
     
@@ -945,6 +1048,10 @@ posted in
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2014/04/21/mongodbxue-xi-ji-lu/">mongoDB学习记录</a>
+        </li>
+      
+        <li>
           <a href="/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/">MongoDB的嵌套和引用</a>
         </li>
       
@@ -958,10 +1065,6 @@ posted in
       
         <li>
           <a href="/blog/2014/03/27/create-new-user-in-ubuntu/">create new user in ubuntu</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2014/03/26/runing-two-vagrant-error/">Running two vagrant error</a>
         </li>
       
     </ul>
