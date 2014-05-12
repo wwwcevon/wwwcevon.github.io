@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-04-21T18:07:54+08:00</updated>
+  <updated>2014-05-12T17:55:12+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[python import]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/12/python-import/"/>
+    <updated>2014-05-12T12:20:27+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/12/python-import</id>
+    <content type="html"><![CDATA[<h2>import 如何工作</h2>
+
+<ul>
+<li>找到模块文件</li>
+<li>编译成位码</li>
+<li>执行模块的代码来创建其所定义的对象</li>
+</ul>
+
+
+<p>这三个步骤只有在模块第一次导入时才会进行，后面重复导入会跳过</p>
+
+<p>如果需要强制再次导入，需要调用reload</p>
+
+<h3>搜索路径</h3>
+
+<ul>
+<li>程序的主目录</li>
+<li>PYTHONPATH目录</li>
+<li>标准链接库目录</li>
+<li>任何 .pth 文件的内容</li>
+</ul>
+
+
+<p>import b 省略了文件后缀，Python 会选择第一个符合的</p>
+
+<ul>
+<li>源代码 b.py</li>
+<li>字节码 b.pyc</li>
+<li>目录 b</li>
+<li>编译扩展模块 b.so b.dll b.pyd</li>
+<li>用c编写的编译好的内置模块</li>
+<li>zip 文件，导入时自动解压缩</li>
+<li>内存内映射</li>
+<li>java 类</li>
+<li>.NET 组件</li>
+</ul>
+
+
+<h3>distutils 第三方工具</h3>
+
+<p>更多有关 <a href="http://peak.telecommunity.com/DevCenter/PythonEggs">Python egg</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mongoDB学习记录]]></title>

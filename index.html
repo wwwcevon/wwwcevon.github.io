@@ -108,6 +108,104 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/05/12/python-import/">Python Import</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-12T12:20:27+08:00" pubdate data-updated="true">May 12<span>th</span>, 2014</time> - 
+        
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/python/'>python</a>
+  
+</span>
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>import 如何工作</h2>
+
+<ul>
+<li>找到模块文件</li>
+<li>编译成位码</li>
+<li>执行模块的代码来创建其所定义的对象</li>
+</ul>
+
+
+<p>这三个步骤只有在模块第一次导入时才会进行，后面重复导入会跳过</p>
+
+<p>如果需要强制再次导入，需要调用reload</p>
+
+<h3>搜索路径</h3>
+
+<ul>
+<li>程序的主目录</li>
+<li>PYTHONPATH目录</li>
+<li>标准链接库目录</li>
+<li>任何 .pth 文件的内容</li>
+</ul>
+
+
+<p>import b 省略了文件后缀，Python 会选择第一个符合的</p>
+
+<ul>
+<li>源代码 b.py</li>
+<li>字节码 b.pyc</li>
+<li>目录 b</li>
+<li>编译扩展模块 b.so b.dll b.pyd</li>
+<li>用c编写的编译好的内置模块</li>
+<li>zip 文件，导入时自动解压缩</li>
+<li>内存内映射</li>
+<li>java 类</li>
+<li>.NET 组件</li>
+</ul>
+
+
+<h3>distutils 第三方工具</h3>
+
+<p>更多有关 <a href="http://peak.telecommunity.com/DevCenter/PythonEggs">Python egg</a></p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/04/21/mongodbxue-xi-ji-lu/">mongoDB学习记录</a></h1>
     
     
@@ -864,178 +962,13 @@ posted in
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/24/first-blog/">First Blog</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-24T17:37:02+08:00" pubdate data-updated="true">Mar 24<span>th</span>, 2014</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/blog/'>Blog</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Blog</h1>
-
-<h2>Installation</h2>
-
-<p>Blog framework:Octopress</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>install octopress</h3>
-
-<ul>
-<li><p>install git</p></li>
-<li><p>install rbenv</p></li>
-<li><p>clone octopress from github</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>install dependencies</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
-</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Install the default Octopress theme</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>deploying to Github Pages</h3>
-
-<ul>
-<li><p>Create a new Github repository and name the repository with the format username.github.io, where username is your GitHub user name or organization name.</p></li>
-<li><p>input</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages
-</span><span class='line'>git@github.com:wwwcevon/wwwcevon.github.io.git</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Next run:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>commit the source for your blog.</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Configuring Octopress</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> _config.yml       # Main config (Jekyll's settings)
-</span><span class='line'>Rakefile          # Configs for deployment
-</span><span class='line'>config.rb         # Compass config
-</span><span class='line'>config.ru         # Rack config</span></code></pre></td></tr></table></div></figure>
-
-
-<p>&hellip;&hellip;<a href="http://octopress.org/docs/configuring/">http://octopress.org/docs/configuring/</a></p>
-
-<h3>BLog with Octopress</h3>
-
-<ul>
-<li><p>rake new_post[&ldquo;title&rdquo;]</p></li>
-<li><p>Generate and preview</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate   # Generates posts and pages into the public directory
-</span><span class='line'>rake watch      # Watches source/ and sass/ for changes and regenerates
-</span><span class='line'>rake preview    # open in chrome</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
+          
+            <li class="previous">
+              <a href="/blog/page/2/">&larr; Older</a>
+            </li>
           
           
         </ul>
@@ -1052,6 +985,10 @@ posted in
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2014/05/12/python-import/">python import</a>
+        </li>
+      
+        <li>
           <a href="/blog/2014/04/21/mongodbxue-xi-ji-lu/">mongoDB学习记录</a>
         </li>
       
@@ -1065,10 +1002,6 @@ posted in
       
         <li>
           <a href="/blog/2014/04/03/predictionio-issue-solution/">PredictionIO issue solution</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2014/03/27/create-new-user-in-ubuntu/">create new user in ubuntu</a>
         </li>
       
     </ul>
