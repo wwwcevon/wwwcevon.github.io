@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T18:08:53+08:00</updated>
+  <updated>2014-05-14T18:42:09+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cp文件夹中的.git .virtualenv的坑]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng/"/>
+    <updated>2014-05-14T18:23:57+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng</id>
+    <content type="html"><![CDATA[<p>cp 不会 copy 隐藏文件(以.开头的)</p>
+
+<p>如 <code>.git</code> <code>.virtualenv</code></p>
+
+<p>所以如果有用 virtualenv 包装环境，不要使用 cp 或者 mv 直接复制或者移动</p>
+
+<p>如果非要使用，可以加上<code>-a</code></p>
+
+<p><strong>注意</strong>: 直接移动 virtualenv 后会无法使用，因为虚拟环境是写死绝对路径的</p>
+
+<p>可以在 .virtualenv/bin/activate 中找到并修改</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[create new user in ubuntu]]></title>

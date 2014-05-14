@@ -50,14 +50,20 @@
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/</loc>
-        <lastmod>2014-05-14T18:08:31+08:00</lastmod>
+        <lastmod>2014-05-14T18:13:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://wwwcevon.github.io/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng/
+        </loc>
+        <lastmod>2014-05-14T18:35:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/archives/</loc>
-        <lastmod>2014-05-14T18:08:31+08:00</lastmod>
+        <lastmod>2014-05-14T18:35:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/</loc>
-        <lastmod>2014-05-14T18:08:31+08:00</lastmod>
+        <lastmod>2014-05-14T18:35:15+08:00</lastmod>
     </url>
 </urlset>

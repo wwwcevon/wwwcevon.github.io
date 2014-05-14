@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T18:08:53+08:00</updated>
+  <updated>2014-05-14T18:42:09+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -18,7 +18,10 @@
     <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
     <updated>2014-05-14T18:03:44+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h2>关于 bson.objectid.ObjectID 的一些问题</h2>
+
+<p>ObjectID to String:
+<code>str</code></p>
 ]]></content>
   </entry>
   

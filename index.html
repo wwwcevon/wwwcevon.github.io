@@ -108,6 +108,74 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng/">cp文件夹中的.git .virtualenv的坑</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-14T18:23:57+08:00" pubdate data-updated="true">May 14<span>th</span>, 2014</time> - 
+        
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>Linux</a>
+  
+</span>
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>cp 不会 copy 隐藏文件(以.开头的)</p>
+
+<p>如 <code>.git</code> <code>.virtualenv</code></p>
+
+<p>所以如果有用 virtualenv 包装环境，不要使用 cp 或者 mv 直接复制或者移动</p>
+
+<p>如果非要使用，可以加上<code>-a</code></p>
+
+<p><strong>注意</strong>: 直接移动 virtualenv 后会无法使用，因为虚拟环境是写死绝对路径的</p>
+
+<p>可以在 .virtualenv/bin/activate 中找到并修改</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/">Pymongo 的一些坑</a></h1>
     
     
@@ -150,7 +218,10 @@ posted in
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h2>关于 bson.objectid.ObjectID 的一些问题</h2>
+
+<p>ObjectID to String:
+<code>str</code></p>
 </div>
   
   
@@ -909,84 +980,6 @@ posted in
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/25/search-in-blog/">Search in Blog</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-25T16:10:46+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/blog/'>Blog</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Blog</h1>
-
-<h2>Search</h2>
-
-<h3>How to make it possible to search in the blog</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>site:wwwcevon.github.io</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Add a site</li>
-<li>Download HTML verification file</li>
-<li>copy into /source</li>
-<li>regenerate and deploy</li>
-<li><p>click verify</p></li>
-<li><p>choose <code>Google Webmaster Tools</code> <code>Crawl:</code> <code>Fetch as Google</code></p></li>
-<li>Click FETCH</li>
-<li>URL submitted to index</li>
-</ul>
-
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -1010,6 +1003,10 @@ posted in
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng/">cp文件夹中的.git .virtualenv的坑</a>
+        </li>
+      
+        <li>
           <a href="/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/">pymongo 的一些坑</a>
         </li>
       
@@ -1023,10 +1020,6 @@ posted in
       
         <li>
           <a href="/blog/2014/04/21/mongodbxue-xi-ji-lu/">mongoDB学习记录</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/">MongoDB的嵌套和引用</a>
         </li>
       
     </ul>
