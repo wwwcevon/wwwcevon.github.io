@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MongoDB | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-12T17:55:12+08:00</updated>
+  <updated>2014-05-14T11:53:12+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Query embedded documents]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents/"/>
+    <updated>2014-05-14T11:05:54+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents</id>
+    <content type="html"><![CDATA[<h2>MongoDB query</h2>
+
+<h3>embedded documents</h3>
+
+<p>```
+db.collection.find({</p>
+
+<pre><code>producer: {
+    company: 'ABC123'
+  }
+</code></pre>
+
+<p>  })
+```</p>
+
+<p><code>
+db.collection.find({'producer.company': 'ABC123'})
+</code></p>
+
+<h3>match an array element</h3>
+
+<p><code>
+db.inventory.find({'tags.0':'fruit'})
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MongoDB]]></title>

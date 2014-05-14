@@ -108,6 +108,91 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/03/25/githubpage-build-failed/">GithubPage Build Failed</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Kevincai</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-25T10:16:06+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Blog</h1>
+
+<h2>Error</h2>
+
+<p>Blog framework:Octopress</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://octopress.org</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Error description</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>A file was included in source/index.html that is a symlink or does not exist in your _includes directory.</p>
+
+<h3>Solution</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd _deploy
+</span><span class='line'>git config branch.master.remote origin
+</span><span class='line'>git config branch.master.merge refs/heads/master
+</span><span class='line'>git pull
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Summary</h3>
+
+<p>不应使用git commit去发表blog，或使用merge／rebase等使得source branch和master branch合并。</p>
+
+<p>GithubPage只需要<em>deploy中的内容，所以将remote/master指向</em>deploy文件夹，再重新deploy</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/03/24/first-blog/">First Blog</a></h1>
     
     
@@ -294,6 +379,10 @@ posted in
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2014/05/14/query-embedded-documents/">Query embedded documents</a>
+        </li>
+      
+        <li>
           <a href="/blog/2014/05/12/python-import/">python import</a>
         </li>
       
@@ -307,10 +396,6 @@ posted in
       
         <li>
           <a href="/blog/2014/04/18/mongodb/">MongoDB</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2014/04/03/predictionio-issue-solution/">PredictionIO issue solution</a>
         </li>
       
     </ul>
