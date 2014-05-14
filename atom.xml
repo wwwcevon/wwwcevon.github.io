@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T11:53:12+08:00</updated>
+  <updated>2014-05-14T18:08:53+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[pymongo 的一些坑]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
+    <updated>2014-05-14T18:03:44+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Query embedded documents]]></title>

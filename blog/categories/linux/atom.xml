@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Kevincai's Blog]]></title>
+  <link href="http://wwwcevon.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://wwwcevon.github.io/"/>
+  <updated>2014-05-14T18:08:53+08:00</updated>
+  <id>http://wwwcevon.github.io/</id>
+  <author>
+    <name><![CDATA[Kevincai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[create new user in ubuntu]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/"/>
+    <updated>2014-03-27T14:57:42+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu</id>
+    <content type="html"><![CDATA[<h1>Linux</h1>
+
+<h2>Tips</h2>
+
+<h3>Purpose</h3>
+
+<p>Create new user on ubuntu</p>
+
+<h3>How</h3>
+
+<p><code>
+$ sudo useradd -d /home/username -m username
+$ sudo passwd username
+$ sudo adduser username group
+</code></p>
+
+<h3>Abnormal</h3>
+
+<p>Bash not running for new admin users on login</p>
+
+<h3>Solution</h3>
+
+<p><code>
+$ useradd -D
+$ sudo chsh -s /bin/bash username
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

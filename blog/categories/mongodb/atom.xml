@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: MongoDB | Kevincai's Blog]]></title>
+  <title><![CDATA[Category: MongoDB, | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T11:53:12+08:00</updated>
+  <updated>2014-05-14T18:08:53+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -14,84 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Query embedded documents]]></title>
-    <link href="http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents/"/>
-    <updated>2014-05-14T11:05:54+08:00</updated>
-    <id>http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents</id>
-    <content type="html"><![CDATA[<h2>MongoDB query</h2>
-
-<h3>embedded documents</h3>
-
-<p>```
-db.collection.find({</p>
-
-<pre><code>producer: {
-    company: 'ABC123'
-  }
-</code></pre>
-
-<p>  })
-```</p>
-
-<p><code>
-db.collection.find({'producer.company': 'ABC123'})
-</code></p>
-
-<h3>match an array element</h3>
-
-<p><code>
-db.inventory.find({'tags.0':'fruit'})
-</code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MongoDB]]></title>
-    <link href="http://wwwcevon.github.io/blog/2014/04/18/mongodb/"/>
-    <updated>2014-04-18T15:55:37+08:00</updated>
-    <id>http://wwwcevon.github.io/blog/2014/04/18/mongodb</id>
-    <content type="html"><![CDATA[<h1>MongoDB</h1>
-
-<h2>Tips</h2>
-
-<p>MongoDB&mdash;&mdash;SQL</p>
-
-<p><code>
-document     row
-collection   table
-database     database
-</code></p>
-
-<p>Daemon
-<code>
-$ mongod --dbpath=&lt;data/db&gt; --logpath=&lt;data/log/r3.log&gt; --fork
-</code></p>
-
-<p>config</p>
-
-<p><code>port</code>
-Web port = port+1000</p>
-
-<p><code>logappendw</code>
-错误日志采用追加模式，默认是复写模式</p>
-
-<p><code>journal</code>
-开启日志功能</p>
-
-<p><code>directoryperdb</code>
-每个db存放在单独的目录中，建议设置</p>
-
-<p><code>maxConns</code>
-最大连接数</p>
-
-<h2>Attention</h2>
-
-<p>不要用kill -9 杀mongoDB的进程，会损坏数据</p>
-
-<p>可以使用
-<code>Control-C</code>
-<code>shutdownServer()</code>
-<code>kill -2</code></p>
+    <title type="html"><![CDATA[pymongo 的一些坑]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
+    <updated>2014-05-14T18:03:44+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   

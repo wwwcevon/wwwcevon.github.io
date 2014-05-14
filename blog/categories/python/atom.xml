@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: python | Kevincai's Blog]]></title>
+  <title><![CDATA[Category: Python | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T11:53:12+08:00</updated>
+  <updated>2014-05-14T18:08:53+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[pymongo 的一些坑]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
+    <updated>2014-05-14T18:03:44+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[python import]]></title>
