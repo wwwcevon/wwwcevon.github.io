@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T18:42:09+08:00</updated>
+  <updated>2014-05-20T16:29:01+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[python challenge]]></title>
+    <link href="http://wwwcevon.github.io/blog/2014/05/15/python-challenge/"/>
+    <updated>2014-05-15T15:50:03+08:00</updated>
+    <id>http://wwwcevon.github.io/blog/2014/05/15/python-challenge</id>
+    <content type="html"><![CDATA[<p>发现了一个好玩的 <a href="http://www.pythonchallenge.com">网站</a></p>
+
+<h3>Level 0</h3>
+
+<p>关于幂运算的问题，计算2的38次方</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>result = 2 ** 28</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Level 1</h3>
+
+<p>关于 String 的一些操作</p>
+
+<p>要求把一个字符串中的每一个字母都替换成 ASCII+2</p>
+
+<p>需要用到 <code>string.maketrans(from, to)</code> `translate</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cp文件夹中的.git .virtualenv的坑]]></title>
@@ -39,8 +64,17 @@
     <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
     <content type="html"><![CDATA[<h2>关于 bson.objectid.ObjectID 的一些问题</h2>
 
+<p>常见 Mongodb 的 _id 的类型</p>
+
 <p>ObjectID to String:
-<code>str</code></p>
+<code>str()</code></p>
+
+<p>String to ObjectID:
+<code>ObjectID()</code></p>
+
+<p>ObjectID每个部分都是有意义的 <a href="http://devopslog.wordpress.com/2012/04/22/disassemblingreassembling-mongodb-objectids/">详见</a></p>
+
+<h2></h2>
 ]]></content>
   </entry>
   

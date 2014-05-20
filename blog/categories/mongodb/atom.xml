@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MongoDB, | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-05-14T18:42:09+08:00</updated>
+  <updated>2014-05-20T16:29:01+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -20,8 +20,17 @@
     <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
     <content type="html"><![CDATA[<h2>关于 bson.objectid.ObjectID 的一些问题</h2>
 
+<p>常见 Mongodb 的 _id 的类型</p>
+
 <p>ObjectID to String:
-<code>str</code></p>
+<code>str()</code></p>
+
+<p>String to ObjectID:
+<code>ObjectID()</code></p>
+
+<p>ObjectID每个部分都是有意义的 <a href="http://devopslog.wordpress.com/2012/04/22/disassemblingreassembling-mongodb-objectids/">详见</a></p>
+
+<h2></h2>
 ]]></content>
   </entry>
   
