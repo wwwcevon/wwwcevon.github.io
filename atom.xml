@@ -4,7 +4,7 @@
   <title><![CDATA[Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-10-08T12:19:40+08:00</updated>
+  <updated>2014-10-08T14:04:40+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Fabric]]></title>
+    <title type="html"><![CDATA[fabric]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/08/07/fabric/"/>
     <updated>2014-08-07T16:50:35+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/08/07/fabric</id>
@@ -23,7 +23,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Python Challenge]]></title>
+    <title type="html"><![CDATA[python challenge]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/15/python-challenge/"/>
     <updated>2014-05-15T15:50:03+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/15/python-challenge</id>
@@ -67,7 +67,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Pymongo 的一些坑]]></title>
+    <title type="html"><![CDATA[pymongo 的一些坑]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
     <updated>2014-05-14T18:03:44+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
@@ -88,7 +88,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Query Embedded Documents]]></title>
+    <title type="html"><![CDATA[Query embedded documents]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents/"/>
     <updated>2014-05-14T11:05:54+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents</id>
@@ -123,7 +123,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Python Import]]></title>
+    <title type="html"><![CDATA[python import]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/12/python-import/"/>
     <updated>2014-05-12T12:20:27+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/12/python-import</id>
@@ -352,7 +352,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[PredictionIO Issue Solution]]></title>
+    <title type="html"><![CDATA[PredictionIO issue solution]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/04/03/predictionio-issue-solution/"/>
     <updated>2014-04-03T11:13:25+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/04/03/predictionio-issue-solution</id>
@@ -385,7 +385,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Create New User in Ubuntu]]></title>
+    <title type="html"><![CDATA[create new user in ubuntu]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/"/>
     <updated>2014-03-27T14:57:42+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu</id>
@@ -422,7 +422,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Running Two Vagrant Error]]></title>
+    <title type="html"><![CDATA[Running two vagrant error]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/03/26/runing-two-vagrant-error/"/>
     <updated>2014-03-26T10:40:26+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/03/26/runing-two-vagrant-error</id>
@@ -445,7 +445,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Search in Blog]]></title>
+    <title type="html"><![CDATA[Search in blog]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/03/25/search-in-blog/"/>
     <updated>2014-03-25T16:10:46+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/03/25/search-in-blog</id>
@@ -474,7 +474,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Design for Oryx_cloud]]></title>
+    <title type="html"><![CDATA[design for oryx_cloud]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/03/25/design-for-oryx-cloud/"/>
     <updated>2014-03-25T14:16:02+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/03/25/design-for-oryx-cloud</id>
@@ -499,7 +499,7 @@ Web port = port+1000</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[GithubPage Build Failed]]></title>
+    <title type="html"><![CDATA[GithubPage build failed]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/"/>
     <updated>2014-03-25T10:16:06+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed</id>

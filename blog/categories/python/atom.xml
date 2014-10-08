@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Kevincai's Blog]]></title>
   <link href="http://wwwcevon.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://wwwcevon.github.io/"/>
-  <updated>2014-10-08T12:19:40+08:00</updated>
+  <updated>2014-10-08T14:04:40+08:00</updated>
   <id>http://wwwcevon.github.io/</id>
   <author>
     <name><![CDATA[Kevincai]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Python Challenge]]></title>
+    <title type="html"><![CDATA[python challenge]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/15/python-challenge/"/>
     <updated>2014-05-15T15:50:03+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/15/python-challenge</id>
@@ -39,7 +39,7 @@ result = 2 ** 28
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Pymongo 的一些坑]]></title>
+    <title type="html"><![CDATA[pymongo 的一些坑]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/"/>
     <updated>2014-05-14T18:03:44+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-[?]-xie-keng</id>
@@ -60,7 +60,7 @@ result = 2 ** 28
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Python Import]]></title>
+    <title type="html"><![CDATA[python import]]></title>
     <link href="http://wwwcevon.github.io/blog/2014/05/12/python-import/"/>
     <updated>2014-05-12T12:20:27+08:00</updated>
     <id>http://wwwcevon.github.io/blog/2014/05/12/python-import</id>
