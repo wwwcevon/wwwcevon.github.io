@@ -2,72 +2,80 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/24/first-blog/</loc>
-        <lastmod>2014-03-27T17:35:55+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/25/githubpage-build-failed/</loc>
-        <lastmod>2014-05-14T18:06:12+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/25/design-for-oryx-cloud/</loc>
-        <lastmod>2014-05-14T18:05:30+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/25/search-in-blog/</loc>
-        <lastmod>2014-05-14T18:06:30+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/26/runing-two-vagrant-error/</loc>
-        <lastmod>2014-05-14T18:06:46+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/03/27/create-new-user-in-ubuntu/</loc>
-        <lastmod>2014-05-14T18:07:08+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/04/03/predictionio-issue-solution/</loc>
-        <lastmod>2014-04-03T11:29:33+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/04/18/mongodb/</loc>
-        <lastmod>2014-04-21T10:21:51+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/04/21/mongodbde-qian-tao-he-yin-yong/</loc>
-        <lastmod>2014-05-14T18:07:33+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/04/21/mongodbxue-xi-ji-lu/</loc>
-        <lastmod>2014-05-14T18:07:47+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/05/12/python-import/</loc>
-        <lastmod>2014-05-14T18:08:02+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/05/14/query-embedded-documents/</loc>
-        <lastmod>2014-05-14T11:53:05+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/05/14/pymongo-de-%5B%3F%5D-xie-keng/</loc>
-        <lastmod>2014-05-15T15:51:56+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>
             http://wwwcevon.github.io/blog/2014/05/14/cpwen-jian-jia-zhong-de-dot-git-virtualenvde-keng/
         </loc>
-        <lastmod>2014-05-14T18:35:15+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/2014/05/15/python-challenge/</loc>
-        <lastmod>2014-05-15T18:02:24+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://wwwcevon.github.io/blog/2014/08/07/fabric/</loc>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/blog/archives/</loc>
-        <lastmod>2014-05-15T18:02:24+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://wwwcevon.github.io/</loc>
-        <lastmod>2014-05-15T18:02:24+08:00</lastmod>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://wwwcevon.github.io/robots.txt</loc>
+        <lastmod>2014-10-08T12:00:06+08:00</lastmod>
     </url>
 </urlset>
